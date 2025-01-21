@@ -78,7 +78,7 @@ wss.on("connection", (ws) => {
                 if(currClient.ws !== ws) {
                     currClient.ws.send(JSON.stringify({
                         MSG : MESSAGE, 
-                        CLIENT_NUM : currClient.CLIENT_NUMBER
+                        CLIENT_NUM : CLIENT_NUMBER
                     }));
                 }
             });
